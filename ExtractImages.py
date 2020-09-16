@@ -32,7 +32,7 @@ class ExtractImages():
                     profImg = info[0]["profile_image_url_https"]
                     ext = (os.path.splitext(profImg)[1]).split('.')[1]
                     imgName = (getattr(i, 'Source') + '.' + ext)
-                    urllib.request.urlretrieve(profImg, "/home/hale/Documents/hale_test_projects/harassment_detection/output/profile_images/%s" % imgName)
+                    urllib.request.urlretrieve(profImg, "~/output/profile_images/%s" % imgName)
                 
                 except:
                     print('No user found!')
@@ -53,7 +53,7 @@ class ExtractImages():
                     imgName = (getattr(i, 'Source') + '.' + getattr(i, 'Target') + '.' + str(getattr(i, 'row_id')) + '.' + ext)
 
                     try:
-                        urllib.request.urlretrieve(media_url, "/home/hale/Documents/hale_test_projects/harassment_detection/output/tweet_images/%s" % imgName)
+                        urllib.request.urlretrieve(media_url, "~/output/tweet_images/%s" % imgName)
                     except:
                         pass        
     
