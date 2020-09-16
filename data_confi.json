@@ -1,0 +1,41 @@
+{
+	"data_sources":{
+
+		"json" : {
+            "tweets_json" : "~/tweets_json",
+            "users_json"  : "~/users_json"
+            
+        },
+
+        "csv": {
+            "harassment_lexicon": "~/Harassment_Lexicon.csv"
+
+        }       
+                
+    },
+
+    "output_files":{
+
+        "twitter":{
+            
+            "tweet_images":"~/tweet_images",
+            "profile_images": "~/profile_images"
+        }
+    },
+
+    "auth": {
+
+        "twitter" : {
+
+            "token":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "token_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "consumer_key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "consumer_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            
+        }
+
+    } 
+    
+    
+
+}
