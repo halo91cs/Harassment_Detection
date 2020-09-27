@@ -19,7 +19,7 @@ class ExtractImages():
         df = self.transObj.aggregated_dataset()
         
         t = twitter.Twitter(auth=twitter.OAuth(self.twitter[0], self.twitter[1], self.twitter[2], self.twitter[3]))
-        # since we have 722 interactions, it makes sense to divide the df into 6 and wait for 15 sec. for each batch.
+        # since we have 688 interactions, it makes sense to divide the df into 6 and wait for 15 sec. for each batch.
         # When Sending too many requests to twitter, it blocks to download.. 
         # That's why we wait for 15 sec for each batch and continue..
         splitted = np.array_split(df, 6) 
